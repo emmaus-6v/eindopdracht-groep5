@@ -1,5 +1,5 @@
 # Verslag eindopdracht 6V
-### gemaakt door --leerling1--, --leerling2--, etc
+### gemaakt door Kars K, Kars H, Lucas K, Amir, Daan N, Maarten en Wesley
 
 ---
 
@@ -9,7 +9,11 @@ Lorem ipsum...
 
 
 ## Idee
-Ons idee was om een knikkerbaan te maken die...
+Ons idee was om een knikkerbaan te maken waarbij er twee kanten zijn die een soort tegen elkaar vechten om wie het snelste beneden is.
+Aan het begin krijgt onze knikkerbaan natuurlijk de knikkers binnen via een andere knikkerbaan of handmatig.
+Deze knikkers worden gedistrubueerd via een trechter naar de linker- en rechterkant van de baan waar ze tegen elkaar racen.
+
+De twee knikkerbanen, links en rechts, zijn 
 (gebruik gerust plaatjes)
 
 
