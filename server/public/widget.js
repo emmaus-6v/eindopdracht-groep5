@@ -10,9 +10,11 @@ var numberOfButtonPresses = 0;
  * Gebruik deze functie om plaatjes van de server te laten laden
  * door de browser die je widget opent
  */
-function preload() {
-  achtergrondPlaatje = loadImage('images/voorbeeld.jpg');
-}
+
+ /* function preload() {
+  
+ }
+ */
 
 
 /**
@@ -128,9 +130,5 @@ function setup() {
 function draw() {
   // schrijf hieronder de code van je widget
   // nu wordt slechts een voorbeeld als plaatje getoond
-  // verwijder deze achtergrond en creëer je eigen widget
-
-  image(achtergrondPlaatje, 0, 0, 480, 200);
-  fill(255, 255, 255);
-  text("Aantal keer geklikt:" + numberOfButtonPresses, 250, 30);
+  // verwijder deze achtergrond en creëer je eigen widge
 }
