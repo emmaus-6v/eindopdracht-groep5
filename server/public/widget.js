@@ -129,6 +129,7 @@ function setup() {
  */
 function draw() {
   background(0, 0, 0);
+  text("Score", 20, 20);
   // schrijf hieronder de code van je widget
   // nu wordt slechts een voorbeeld als plaatje getoond
   // verwijder deze achtergrond en creëer je eigen widge
