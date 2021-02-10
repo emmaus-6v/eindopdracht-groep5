@@ -128,6 +128,7 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+  background(0, 0, 0);
   // schrijf hieronder de code van je widget
   // nu wordt slechts een voorbeeld als plaatje getoond
   // verwijder deze achtergrond en creëer je eigen widge
