@@ -128,8 +128,15 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-  background(0, 0, 0);
-  text("Score", 20, 20);
+   background(0,0,0);
+    fill(255, 255, 255);
+    textSize(20);
+    text("score", 190, 20);
+    textSize(35);
+    text("0", 170, 60); //moet nog variabel worden
+    text("2", 240, 60); //idem
+
+    
   // schrijf hieronder de code van je widget
   // nu wordt slechts een voorbeeld als plaatje getoond
   // verwijder deze achtergrond en creëer je eigen widge
