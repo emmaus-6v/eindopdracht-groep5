@@ -6,9 +6,9 @@ Uitgevoerd: over het fysieke deel van het sorteerdeel nagedacht en begonnen met 
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 10-02-2021
+Leerling: Kars Kraan
+Uitgevoerd: basis score display toegevoegd
 
 ---
 
