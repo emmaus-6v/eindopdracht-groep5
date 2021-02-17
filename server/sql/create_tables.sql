@@ -12,12 +12,10 @@ CREATE TABLE buttonPresses (
 
 CREATE TABLE scoreLinks (
     ID INTEGER PRIMARY KEY,
-    links INTEGER,
     tijd TIMESTAMP WITH TIME ZONE NOT NULL
     );
-    
+
 CREATE TABLE scoreRechts (
     ID INTEGER PRIMARY KEY,
-    rechts INTEGER,
     tijd TIMESTAMP WITH TIME ZONE NOT NULL
     );

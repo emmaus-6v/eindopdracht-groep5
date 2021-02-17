@@ -28,6 +28,9 @@ app.get('/api/addButtonPress', addButtonPress);
 app.get('/api/getTotalPresses', getTotalPresses);
 //einde voorbeeld
 
+
+app.get('/api/linksScoort', linksScoort);
+app.get('/api/rechtsScoort',rechtsScoort);
 app.get('/api/setKnikkerbaanStatus/:newStatus', setKnikkerbaanStatus);
 
 
@@ -101,7 +104,7 @@ function checkChanges(_request, response) {
                 });
 }
 
-
+//-------------voorbeeld----------------------//
 /**
  * addButtonPress
  * 
@@ -135,6 +138,38 @@ function getTotalPresses(_request, response){
     response.status(200).json(results.rows[0]);
   });
 }
+
+//------------einde voorbeeld----------/
+/**
+ * voegt nieuwe regel toe aan scoreLinks
+ * en geeft de id van de nieuwe regel terug in de reponse
+ * @param _request het webrequest dat deze bewerking startte
+ * @param response het antwoord dat teruggegeven gaat worden.
+ */
+function linksScoort(_request, response) {
+  pool.query("INSERT INTO scoreLinks (tijd) VALUES (CURRENT_TIMESTAMP) RETURNING ID", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Nieuwe punt added with ID: ${results.rows[0].id}`);
+  });
+}
+
+/**
+ * voegt nieuwe regel toe aan scoreRechts
+ * en geeft de id van de nieuwe regel terug in de reponse
+ * @param _request het webrequest dat deze bewerking startte
+ * @param response het antwoord dat teruggegeven gaat worden.
+ */
+function rechtsScoort(_request, response) {
+  pool.query("INSERT INTO scoreRechts (tijd) VALUES (CURRENT_TIMESTAMP) RETURNING ID", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Nieuwe punt added with ID: ${results.rows[0].id}`);
+  });
+}
+
 
 
 /**
