@@ -18,10 +18,68 @@ Uitgevoerd: SQL-tabel toegevoegd en Maarten geholpen met een probleem
 
 ---
 
+Datum: 17-02-2021
+Leerling: Kars Kraan 
+Uitgevoerd: Begonnen aan server api
+
+---
+
 Datum:
 Leerling:
 Uitgevoerd:
 
 ---
 
-etc...
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+---
+
+Datum:
+Leerling:
+Uitgevoerd:
+
+
