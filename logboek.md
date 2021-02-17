@@ -12,9 +12,9 @@ Uitgevoerd: basis score display toegevoegd
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 15-02-2021
+Leerling: Kars Kraan
+Uitgevoerd: SQL-tabel toegevoegd en Maarten geholpen met een probleem
 
 ---
 
