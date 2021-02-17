@@ -22,8 +22,12 @@ app.use(express.static(path.join(__dirname, '/public')));
 // ⬇︎ HIER JE EIGEN AANPASSINGEN MAKEN ⬇︎
 app.get('/', (_request, response) => {response.redirect('index.html'); })
 app.get('/api/checkchanges/:widgetTimeStamp', checkChanges);
+
+//voorbeeld
 app.get('/api/addButtonPress', addButtonPress);
 app.get('/api/getTotalPresses', getTotalPresses);
+//einde voorbeeld
+
 app.get('/api/setKnikkerbaanStatus/:newStatus', setKnikkerbaanStatus);
 
 
