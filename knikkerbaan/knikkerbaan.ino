@@ -1,81 +1,74 @@
-/*
-  Sweep
+// Sweep
+// by BARRAGAN <http://barraganstudio.com>
+// This example code is in the public domain.
 
-  by BARRAGAN <http://barraganstudio.com>
-  This example code is in the public domain.
-
-  modified 8 Nov 2013  by Scott Fitzgerald
-  http://www.arduino.cc/en/Tutorial/Sweep
-*/
 
 #include <Servo.h>
 
-String sorteerRichting = "stilstand"; //kan zijn stilstand, linksom en rechtsom 
-int pos1 = 90;
-int knop1 = 3;
-int knop2 = 2;
+#define sensorPinLinks 10
+#define sensorPinRechts 12
 
-Servo servo_8;
+Servo servo_8;  
 
-unsigned long startMillis;  //some global variables available anywhere in the program
-unsigned long currentMillis;
-const unsigned long period = 1000;  //the value is a number of milliseconds
+String sorteerRichting = "stilstand"; // kan zijn stilstand, linksom en rechtsom  
+int knop1 = 2; //linksom
+int knop2 = 3; //rechtsom
+int knop3 = 4; //stilstand
 
-void setup() {
-  servo_8.attach(8, 500, 2500);
-  servo_8.write(pos1);
+int sensorLinks = 0, lastStateLinks = 0;         // variable for reading the pushbutton status
+int sensorRechts = 0, lastStateRechts = 0;
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  servo_8.attach(8);
   pinMode(knop1, INPUT);
   pinMode(knop2, INPUT);
-  startMillis = millis();  //initial start time
+  // initialize the sensor pin as an input:
+  pinMode(sensorPinLinks, INPUT);     
+  digitalWrite(sensorPinLinks, HIGH); // turn on the pullup
+  pinMode(sensorPinRechts, INPUT);     
+  digitalWrite(sensorPinRechts, HIGH); // turn on the pullup
 }
 
-void loop() {
-  currentMillis = millis();
+void loop() 
+{
+  // read the state of the pushbutton value:
+  sensorLinks = digitalRead(sensorPinLinks);
+  sensorRechts = digitalRead(sensorPinRechts);
   
   if (digitalRead(knop1) == HIGH) {
-  	sorteerRichting = "linksom";
+    sorteerRichting = "linksom";  
   }
-  
-  if (digitalRead(knop2) == HIGH) {
-    sorteerRichting = "rechtsom";
-  }
-  
-  
-  if (sorteerRichting == "linksom") {
-    servo_8.write(90);
-    
-    if (currentMillis - startMillis >= period) {
-      for (pos1 = 90; pos1 < 180; pos1 += 1) {
-        // tell servo to go to position in variable 'pos'
-        servo_8.write(pos1);
-        // wait 15 ms for servo to reach the position
-        delay(15); // Wait for 15 millisecond(s)
-      }
-      for (pos1 = 180; pos1 > 90; pos1 -=1) {
-        // tell servo to go to position in variable 'pos'
-        servo_8.write(pos1);
-        // wait 15 ms for servo to reach the position
-        delay(15); // Wait for 15 millisecond(s)
-      }
-    }
-  }
-  
-  if (sorteerRichting == "rechtsom") {
-    servo_8.write(90);
 
-    if (currentMillis - startMillis >= period) {
-      for (pos1 = 90; pos1 > 0; pos1 -= 1) {
-        // tell servo to go to position in variable 'pos'
-        servo_8.write(pos1);
-        // wait 15 ms for servo to reach the position
-        delay(15); // Wait for 15 millisecond(s)
-      }
-      for (pos1 = 0; pos1 < 90; pos1 +=1) {
-        // tell servo to go to position in variable 'pos'
-        servo_8.write(pos1);
-        // wait 15 ms for servo to reach the position
-        delay(15); // Wait for 15 millisecond(s)
-      }
-    }
+  if (digitalRead(knop2) == HIGH) {
+    sorteerRichting = "rechtsom";  
+  }
+
+  if (digitalRead(knop3) == HIGH) {
+    sorteerRichting = "stilstand";  
+  }
+  
+  if (sorteerRichting == "stilstand") {
+    servo_8.write(90);
+  }
+
+  if (sorteerRichting == "linksom") {
+    servo_8.write(110);
+  }
+
+  if (sorteerRichting == "rechtsom") {
+    servo_8.write(70);
+  }
+
+  if (sensorLinks == LOW) {
+    sorteerRichting = "linksom";
   } 
+
+  if (sensorRechts == LOW) {
+    sorteerRichting = "rechtsom";
+  } 
+  
+  lastStateLinks = sensorLinks;
+  lastStateRechts = sensorRechts;
 }
