@@ -2,13 +2,19 @@
 
 Datum:10-02-2021
 Leerling: Maarten van Koesveld
-Uitgevoerd: over het fysieke deel van het sorteerdeel nagedacht en begonnen met een ontwerp. Ook besloten een 360° servo te gebruiken i.p.v. een dc motor.
+Uitgevoerd: Over het fysieke deel van het sorteerdeel nagedacht en begonnen met een ontwerp. Ook besloten een 360° servo te gebruiken i.p.v. een dc motor.
 
 ---
 
 Datum: 10-02-2021
 Leerling: Kars Kraan
-Uitgevoerd: basis score display toegevoegd
+Uitgevoerd: Basis score display toegevoegd
+
+---
+
+Datum: 10-02-2021
+Leerling: Wesley Snoei, Kars Hofstra, Daan Nieuweboer
+Uitgevoerd: Tijdens de informatica les naar het technieklokaal gegaan, begin gemaakt aan de knikkerbaan (zowel ontwerp als fysiek gedeelte)
 
 ---
 
