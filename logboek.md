@@ -14,7 +14,7 @@ Uitgevoerd: Basis score display toegevoegd
 
 Datum: 10-02-2021
 Leerling: Wesley Snoei, Kars Hofstra, Daan Nieuweboer
-Uitgevoerd: Tijdens de informatica les naar het technieklokaal gegaan, begin gemaakt aan de knikkerbaan (zowel ontwerp als fysiek gedeelte)
+Uitgevoerd: Tijdens de informatica les naar het technieklokaal gegaan, begin gemaakt aan de knikkerbaan (zowel ontwerp als fysiek gedeelte qua sorteerbak)
 
 ---
 
