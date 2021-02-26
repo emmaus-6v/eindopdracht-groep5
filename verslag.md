@@ -62,7 +62,7 @@ Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodi
 Ons communicatieprotocol werkt zo:
 We hebben natuurlijk van tevoren een groepsapp gemaakt waar we allemaal onze voorkeur gaven over welk "expert" we wilden zijn
 en wie de reserve experts worden van wat. Uiteindelijk heeft Kars K ons allemaal (als leider van de groep) ingedeeld in het een en ander.
-Na de groepsaap leek het ons ook best handig om wat "echt" verbaal contact te hebben in plaats van dat slome Whatsapp,
+Na de groepsapp leek het ons ook best handig om wat "echt" verbaal contact te hebben in plaats van dat slome Whatsapp,
 en daarom maakten we een Discordserver aan en hebben we daar van tijd tot tijd besproken.
 We hadden niet echt deadlines of regels voor dingen gemaakt, en we gingen vooral uit onszelf ons eigen weg.
 Dat we geen regels maakten of iets wat daarop lijkt betekende overigens niet dat we niet wisten wat we moesten doen.
