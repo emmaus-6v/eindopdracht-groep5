@@ -3,12 +3,12 @@
 
 ## Inleiding
 Wij zijn [zie namen hierboven] en wij zijn groep 5 voor de eindopdracht voor informatica.
-Ik ben Wesley, degene die verantwoordelijk is voor de Git / verslag.
-Kars K heeft zich voornamelijk bezig gehouden met de website.
-Kars H heeft zich aan de andere aknt bezig gehouden met het gedeelte "server" en een stukje constructie.
-Daarnaast hebben Daan N en Amir hun tijd besteed aan de knikkerbaan / constructie.
-Lucas K heeft voornamelijk de Arduino gecodeerd en ik elkaar gezet, en natuurlijk hoe de onderdelen werken.
-Maarten heeft zich ten slotte bezig gehouden met de planning en met een beetje constructie en Arduino.
+Ik ben Wesley, degene die verantwoordelijk is voor de Git / Verslag.
+Kars K heeft zich voornamelijk bezig gehouden met de Website.
+Kars H heeft zich aan de andere kant bezig gehouden met het gedeelte "Server" en een stukje Constructie.
+Daarnaast hebben Daan N en Amir hun tijd besteed aan de Knikkerbaan / Constructie.
+Lucas K heeft voornamelijk de Arduino gecodeerd en in elkaar gezet, en natuurlijk onderzocht hoe de onderdelen werken.
+Maarten heeft zich ten slotte bezig gehouden met de planning en met een beetje Constructie en Arduino.
 
 Al in al hebben allemaal wel nagedacht over wat ons als groepje het leukst leek om te doen qua knikkerbaan.
 
@@ -26,12 +26,19 @@ tl;dr
 13-12-2020: Ons idee nu is om met een solenoid in plaats van een luchtpomp de knikkers op twee tegen elkaar racende banen
 af te schieten en dat je via de website een van de twee kanten kan saboteren. Daarnaast is er een sorteersysteem aan het begin.
 
-(gebruik gerust plaatjes)
+26-02-2021
+Door tijdsnood hebben we het idee helemaal door elkaar gehaald. We hebben gekozen om niet meer grootschalige sabotage te doen, maar wel om twee kanten te maken en een klein beetje sabotage. Je kan dus niet meer een kant vernanderen. De knikkers worden bovenaan opgevangen in een bakje, komt in een sorteeldeel die kan ronddraaien via code.
+Via een onderbrekingssensor aan het begin wordt het sorteeldeel omgedraaid (links/rechts). en via servo's aan het begin worden de knikkers tegelijk losgelaten (beide moeten
+aanwezig zijn om het goed te laten starten). Via knoppen kan je de andere kant saboteren (kleine sabotage zoals gezegd) via nog een servo. Ten slotte zitten er nog meer
+onderbrekingssensoren aan het einde die, makkelijk gezegd, het einde markeren van de baan.
 
 
 
 ## Planning en daadwerkelijke uitvoering
 Onze opdracht is als volgt gepland:
+Via Whatsapp en Discord plannen we momenten om te overleggen of we overleggen on the spot.
+Iedereen houdt zich bezig met hun taak en kunnen elkaar vragen voor hulp. We zijn dus niet gelimiteerd aan onze eigen rol.
+Wesley (Git) heeft bijvoorbeeld geholpen met het onderzoeken van een sensor, en Kars H (Server) heeft geholpen met de knikkerbaan in elkaar zetten.
 
 ### sprint 3
 Dit was natuurlijk een sprint waar we vooral ideeën moesten krijgen en een soort moesten inkomen met het idee.
@@ -43,8 +50,11 @@ Hier dachten we wat meer aan uitbreidingen op de knikkberbaan, zoals het saboter
 in plaats van de luchtpomp. Daarnaast moesten we ook gaan werken aan het praktische gedeelte en veel minder aan de theorie.
 
 ### sprint 5
+Er gebeurde hier vrij weinig in het algemeen, klein beetje overleg en beginnetjes aan het ontwerp op papier en in theorie en een beetje code.
 
 ### sprint 6
+Hier moesten we echt aan de bak want we hadden niet veel code en fysieks gedaan. In het algemeen kun je zeggen dat we in de laatste sprint alles hebben gedaan.
+Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodig via de Whatsapp en Discord, over hoe we het allemaal voor elkaar zouden (moeten) krijgen.
 
 
 
