@@ -36,9 +36,9 @@ Uitgevoerd: De code en de arduino onderdelen van het sorteer deel werkend gemaak
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 26-02-2021
+Leerling: Daan Nieuweboer, Kars Hofstra, Maarten van Koesveld, Lucas Koster, Wesley Snoei
+Uitgevoerd: Overleg via Discord over hoe we de deadline gaan halen.
 
 ---
 
