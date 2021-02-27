@@ -42,9 +42,9 @@ Uitgevoerd: Overleg via Discord over hoe we de deadline gaan halen.
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 27-02-2021
+Leerling: Maarten van Koesveld
+Uitgevoerd: De code van het sorteerdeel afgemaakt en de blokkade toegevoegd die de knikkers tegenhoudt totdat voor beide banen een knikker klaar ligt.
 
 ---
 
