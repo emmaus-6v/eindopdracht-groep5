@@ -1,5 +1,5 @@
 
-
+// lucas
 #include <Servo.h>
 
 const int RECHTSOM = 0;
@@ -19,6 +19,37 @@ int blokkadeStatus2 = INACTIEF;
 int knopStatus1;
 int knopStatus2;
 
+//maarten
+#include <Servo.h>
+
+#define sensorPinLinks 6
+#define sensorPinRechts 7
+
+Servo servo_8;  
+Servo servo_9;
+Servo servo_10;
+
+String sorteerRichting = "linksom"; // kan zijn stilstand, linksom en rechtsom  
+int knop1 = 2; //linksom
+int knop2 = 3; //rechtsom
+int knop3 = 4; //stilstand
+int knop4 = 5; //open-dicht
+
+int sensorLinks = 0, lastStateLinks = 0;         // variable for reading the pushbutton status
+int sensorRechts = 0, lastStateRechts = 0;
+
+unsigned long startMillisStart; //startmillis voor de servo's die de knikkers tijdelijk tegen houden.
+unsigned long currentMillisStart; //currentmillis voor de servo's die de knikkers tijdelijk tegen houden.
+unsigned long startMillisSorteer; //startmillis voor het sorteer deel.
+unsigned long currentMillisSorteer; //currentmillis voor het sorteer deel.
+int periode1000 = 1000;   //periode van 1 sec
+int periode2500 = 2500;   //periode van 2,5 sec
+int periode3000 = 3000;   //periode van 3 sec
+
+int sorteerMillisStatus = 0;  //zorgt dat blokkade servo's en de sensors goed kunnen werken met millis
+
+
+//lucas
 void setup()
 {
   servo1.attach(8);// deze twee zijn van de servo library #include <Servo.h>
@@ -31,6 +62,28 @@ void setup()
 
 }
 
+//maarten
+void setup()
+{
+  //servo's
+  servo_8.attach(8); //360 sorteer servo
+  servo_9.attach(9); //linker blok servo
+  servo_9.write(90);
+  servo_10.attach(10); //rechter blok servo
+  servo_10.write(90);
+  //knoppen
+  pinMode(knop1, INPUT);
+  pinMode(knop2, INPUT);
+  pinMode(knop3, INPUT);
+  pinMode(knop4, INPUT);
+  //onderbrekings sensoren
+  pinMode(sensorPinLinks, INPUT);     
+  digitalWrite(sensorPinLinks, HIGH); // turn on the pullup
+  pinMode(sensorPinRechts, INPUT);     
+  digitalWrite(sensorPinRechts, HIGH); // turn on the pullup
+}
+
+//lucas
 void loop()
 { 
   int vorigeKnopStatus1 = knopStatus1;
@@ -113,61 +166,7 @@ void loop()
   }
 }
 
-// sorteer deel
-
-// Sweep
-// by BARRAGAN <http://barraganstudio.com>
-// This example code is in the public domain.
-
-
-#include <Servo.h>
-
-#define sensorPinLinks 6
-#define sensorPinRechts 7
-
-Servo servo_8;  
-Servo servo_9;
-Servo servo_10;
-
-String sorteerRichting = "linksom"; // kan zijn stilstand, linksom en rechtsom  
-int knop1 = 2; //linksom
-int knop2 = 3; //rechtsom
-int knop3 = 4; //stilstand
-int knop4 = 5; //open-dicht
-
-int sensorLinks = 0, lastStateLinks = 0;         // variable for reading the pushbutton status
-int sensorRechts = 0, lastStateRechts = 0;
-
-unsigned long startMillisStart; //startmillis voor de servo's die de knikkers tijdelijk tegen houden.
-unsigned long currentMillisStart; //currentmillis voor de servo's die de knikkers tijdelijk tegen houden.
-unsigned long startMillisSorteer; //startmillis voor het sorteer deel.
-unsigned long currentMillisSorteer; //currentmillis voor het sorteer deel.
-int periode1000 = 1000;   //periode van 1 sec
-int periode2500 = 2500;   //periode van 2,5 sec
-int periode3000 = 3000;   //periode van 3 sec
-
-int sorteerMillisStatus = 0;  //zorgt dat blokkade servo's en de sensors goed kunnen werken met millis
-
-void setup()
-{
-  //servo's
-  servo_8.attach(8); //360 sorteer servo
-  servo_9.attach(9); //linker blok servo
-  servo_9.write(90);
-  servo_10.attach(10); //rechter blok servo
-  servo_10.write(90);
-  //knoppen
-  pinMode(knop1, INPUT);
-  pinMode(knop2, INPUT);
-  pinMode(knop3, INPUT);
-  pinMode(knop4, INPUT);
-  //onderbrekings sensoren
-  pinMode(sensorPinLinks, INPUT);     
-  digitalWrite(sensorPinLinks, HIGH); // turn on the pullup
-  pinMode(sensorPinRechts, INPUT);     
-  digitalWrite(sensorPinRechts, HIGH); // turn on the pullup
-}
-
+//maarten
 void loop() 
 {
   // millis
