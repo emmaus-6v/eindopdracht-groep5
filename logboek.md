@@ -48,33 +48,33 @@ Uitgevoerd: De code van het sorteerdeel afgemaakt en de blokkade toegevoegd die 
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum:25-02-2021
+Leerling: Lucas Koster
+Uitgevoerd: verder Ir sensor begonnen, vorige keer was lange periode geleden, tot realistaite gekomen dat ik servo/obstakels moest doen.
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum:26-02-2021
+Leerling: Lucas Koster
+Uitgevoerd: opnieuw begonnen, deze keer met servo, raamwerk gemaakt voor alle stappen.
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum:27-02-2021
+Leerling: Lucas Koster
+Uitgevoerd: code functioneel gemaakt, sequentie vereist nog veel werk.
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum:28-02-2021
+Leerling: Lucas Koster
+Uitgevoerd: sequentie afgemaakt, code geoptimaliseerd. code geïmporteerd naar github.
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum:1-3-2021
+Leerling:Lucas Koster
+Uitgevoerd: code deze maal goed samengevoegd zodat het nu goed is opgeslagen, code samen met Maarten verbeterd.
 
 ---
 
