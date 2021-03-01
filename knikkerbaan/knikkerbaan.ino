@@ -1,5 +1,5 @@
 
-// obstakel
+//-----------------------obstakel-----------------------//
 #include <Servo.h>
 
 const int RECHTSOM = 0;
@@ -19,7 +19,7 @@ int blokkadeStatus2 = INACTIEF;
 int knopStatus1;
 int knopStatus2;
 
-//sorteren
+//-----------------------sorteren-----------------------//
 
 
 #define sensorPinLinks 6
@@ -49,22 +49,10 @@ int periode3000 = 3000;   //periode van 3 sec
 int sorteerMillisStatus = 0;  //zorgt dat blokkade servo's en de sensors goed kunnen werken met millis
 
 
-//obstakel
+
 void setup()
 {
-  servo1.attach(8);// deze twee zijn van de servo library #include <Servo.h>
-  servo1.write(0);
-  servo2.attach(9);
-  servo2.write(0);
-  pinMode(2,INPUT);//blauwe draad
-  pinMode(4,INPUT);
-  Serial.begin(9600);
-
-}
-
-//sorteren
-void setup()
-{
+  //-----------------------sorteren-----------------------//
   //servo's
   servo_8.attach(8); //360 sorteer servo
   servo_9.attach(9); //linker blok servo
@@ -81,94 +69,23 @@ void setup()
   digitalWrite(sensorPinLinks, HIGH); // turn on the pullup
   pinMode(sensorPinRechts, INPUT);     
   digitalWrite(sensorPinRechts, HIGH); // turn on the pullup
+
+  //-----------------------obstakels-----------------------//
+  servo1.attach(8);// deze twee zijn van de servo library #include <Servo.h>
+  servo1.write(0);
+  servo2.attach(9);
+  servo2.write(0);
+  pinMode(2,INPUT);//blauwe draad
+  pinMode(4,INPUT);
+  Serial.begin(9600);
+
 }
 
-//obstakel
+
+
 void loop()
 { 
-  int vorigeKnopStatus1 = knopStatus1;
-  int vorigeKnopStatus2 = knopStatus2;
-  knopStatus1 = digitalRead(2);
-  knopStatus2 = digitalRead(4);
-  
-  if (vorigeKnopStatus1 == LOW && knopStatus1 == HIGH) {
-    // blijkbaar is de knop opnieuw ingedrukt
-    Serial.println("verander stand van servo");
-    
-    Serial.println(vorigeMillis1);
-    blokkadeStatus1 = ACTIEF;
-    Serial.println(knopStatus1);
-    
-    // Vervolgens passen we de stand van de servo aan:
-    if (draaiRichting1 == LINKSOM) {
-      servo1.write(90);
-      // als dit te snel gaat, kun je bovenstaande regel vervangen door:
-      vorigeMillis1 = millis();
-      Serial.println(vorigeMillis1);}}
-  
-    if(millis() >= vorigeMillis1 +1000){
-      if(blokkadeStatus1 == ACTIEF){
-      Serial.println("delay af");
-      draaiRichting1 = RECHTSOM;
-      Serial.println("richting veranderd");
-      Serial.println(vorigeMillis1);
-      }
-    }
-    
-    
-  if(blokkadeStatus1 == ACTIEF){  
-  if(draaiRichting1 == RECHTSOM){
-      Serial.println("begin");
-      Serial.println(vorigeMillis1);
-      
-      Serial.println("delay voorbij");
-      servo1.write(0); // ik weet niet precies welke graden je wilt
-      // hier kun je ook zo'n vervanging doen, maar dan de andere kant op
-      Serial.println("veranderd terug");
-    blokkadeStatus1 = INACTIEF;
-  }
-  }
-  
-   if (vorigeKnopStatus2 == LOW && knopStatus2 == HIGH) {
-    // blijkbaar is de knop opnieuw ingedrukt
-    Serial.println("verander stand van servo 2");
-    
-    Serial.println(vorigeMillis2);
-    blokkadeStatus2 = ACTIEF;
-    
-    // Vervolgens passen we de stand van de servo aan:
-    if (draaiRichting2 == LINKSOM) {
-      servo2.write(90);
-      vorigeMillis2 = millis();
-      Serial.println(vorigeMillis2);}}
-  
-    if(millis() >= vorigeMillis2 +1000){
-      if(blokkadeStatus2 == ACTIEF){
-      Serial.println("delay 2 af");
-      draaiRichting2 = RECHTSOM;
-      Serial.println("richting 2 veranderd");
-      Serial.println(vorigeMillis2);
-      }
-    }
-    
-    
-  if(blokkadeStatus2 == ACTIEF){  
-  if(draaiRichting2 == RECHTSOM){
-      Serial.println("begin 2");
-      Serial.println(vorigeMillis2);
-      
-      Serial.println("delay voorbij");
-      servo2.write(0); // ik weet niet precies welke graden je wilt
-      // hier kun je ook zo'n vervanging doen, maar dan de andere kant op
-      Serial.println("veranderd 2terug");
-    blokkadeStatus2 = INACTIEF;
-  }
-  }
-}
-
-//sorteren
-void loop() 
-{
+  //-----------------------sorteren-----------------------//
   // millis
   currentMillisStart = millis();
   currentMillisSorteer = millis();
@@ -250,4 +167,89 @@ void loop()
   // onderbrekings sensor state regelen
   lastStateLinks = sensorLinks;
   lastStateRechts = sensorRechts;
+
+
+  //-----------------------obstakels-----------------------//
+  int vorigeKnopStatus1 = knopStatus1;
+  int vorigeKnopStatus2 = knopStatus2;
+  knopStatus1 = digitalRead(2);
+  knopStatus2 = digitalRead(4);
+  
+  if (vorigeKnopStatus1 == LOW && knopStatus1 == HIGH) {
+    // blijkbaar is de knop opnieuw ingedrukt
+    Serial.println("verander stand van servo");
+    
+    Serial.println(vorigeMillis1);
+    blokkadeStatus1 = ACTIEF;
+    Serial.println(knopStatus1);
+    
+    // Vervolgens passen we de stand van de servo aan:
+    if (draaiRichting1 == LINKSOM) {
+      servo1.write(90);
+      // als dit te snel gaat, kun je bovenstaande regel vervangen door:
+      vorigeMillis1 = millis();
+      Serial.println(vorigeMillis1);
+    }
+  }
+  
+    if(millis() >= vorigeMillis1 +1000){
+      if(blokkadeStatus1 == ACTIEF){
+      Serial.println("delay af");
+      draaiRichting1 = RECHTSOM;
+      Serial.println("richting veranderd");
+      Serial.println(vorigeMillis1);
+      }
+    }
+    
+    
+  if(blokkadeStatus1 == ACTIEF){  
+    if(draaiRichting1 == RECHTSOM){
+        Serial.println("begin");
+        Serial.println(vorigeMillis1);
+        
+        Serial.println("delay voorbij");
+        servo1.write(0); // ik weet niet precies welke graden je wilt
+        // hier kun je ook zo'n vervanging doen, maar dan de andere kant op
+        Serial.println("veranderd terug");
+      blokkadeStatus1 = INACTIEF;
+    }
+  }
+  
+  if (vorigeKnopStatus2 == LOW && knopStatus2 == HIGH) {
+    // blijkbaar is de knop opnieuw ingedrukt
+    Serial.println("verander stand van servo 2");
+    
+    Serial.println(vorigeMillis2);
+    blokkadeStatus2 = ACTIEF;
+    
+    // Vervolgens passen we de stand van de servo aan:
+    if (draaiRichting2 == LINKSOM) {
+      servo2.write(90);
+      vorigeMillis2 = millis();
+      Serial.println(vorigeMillis2);
+    }
+  }
+  
+    if(millis() >= vorigeMillis2 +1000){
+      if(blokkadeStatus2 == ACTIEF){
+        Serial.println("delay 2 af");
+        draaiRichting2 = RECHTSOM;
+        Serial.println("richting 2 veranderd");
+        Serial.println(vorigeMillis2);
+      }
+    }
+    
+    
+  if(blokkadeStatus2 == ACTIEF){  
+    if(draaiRichting2 == RECHTSOM){
+      Serial.println("begin 2");
+      Serial.println(vorigeMillis2);
+      
+      Serial.println("delay voorbij");
+      servo2.write(0); // ik weet niet precies welke graden je wilt
+      // hier kun je ook zo'n vervanging doen, maar dan de andere kant op
+      Serial.println("veranderd 2terug");
+      blokkadeStatus2 = INACTIEF;
+    }
+  }
 }
