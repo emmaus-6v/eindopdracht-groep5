@@ -78,9 +78,9 @@ Uitgevoerd: code deze maal goed samengevoegd zodat het nu goed is opgeslagen, co
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 01- 03- 2021
+Leerling: Maarten van Koesveld
+Uitgevoerd: Sorteercode in de main branch gevoegd. Samen met Lucas de code verbeterd en netjes gemaakt.
 
 ---
 
