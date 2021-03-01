@@ -1,5 +1,5 @@
 
-// lucas
+// obstakel
 #include <Servo.h>
 
 const int RECHTSOM = 0;
@@ -19,8 +19,8 @@ int blokkadeStatus2 = INACTIEF;
 int knopStatus1;
 int knopStatus2;
 
-//maarten
-#include <Servo.h>
+//sorteren
+
 
 #define sensorPinLinks 6
 #define sensorPinRechts 7
@@ -49,7 +49,7 @@ int periode3000 = 3000;   //periode van 3 sec
 int sorteerMillisStatus = 0;  //zorgt dat blokkade servo's en de sensors goed kunnen werken met millis
 
 
-//lucas
+//obstakel
 void setup()
 {
   servo1.attach(8);// deze twee zijn van de servo library #include <Servo.h>
@@ -62,7 +62,7 @@ void setup()
 
 }
 
-//maarten
+//sorteren
 void setup()
 {
   //servo's
@@ -83,7 +83,7 @@ void setup()
   digitalWrite(sensorPinRechts, HIGH); // turn on the pullup
 }
 
-//lucas
+//obstakel
 void loop()
 { 
   int vorigeKnopStatus1 = knopStatus1;
@@ -166,7 +166,7 @@ void loop()
   }
 }
 
-//maarten
+//sorteren
 void loop() 
 {
   // millis
