@@ -1,26 +1,5 @@
-
-//-----------------------obstakel-----------------------//
-#include <Servo.h>
-
-const int RECHTSOM = 0;
-const int LINKSOM = 1;
-const int ACTIEF = 1;
-const int INACTIEF = 0;
-Servo servo1;
-Servo servo2;
-int angle = 0;
-long tussenperiode = 1000;
-int draaiRichting1= LINKSOM;
-int draaiRichting2 = LINKSOM;
-long vorigeMillis1 = 0;
-long vorigeMillis2 = 0;
-int blokkadeStatus1 = INACTIEF;
-int blokkadeStatus2 = INACTIEF;
-int knopStatus1;
-int knopStatus2;
-
 //-----------------------sorteren-----------------------//
-
+#include <Servo.h>
 
 #define sensorPinLinks 6
 #define sensorPinRechts 7
@@ -48,6 +27,24 @@ int periode3000 = 3000;   //periode van 3 sec
 
 int sorteerMillisStatus = 0;  //zorgt dat blokkade servo's en de sensors goed kunnen werken met millis
 
+
+//-----------------------obstakel-----------------------//
+const int RECHTSOM = 0;
+const int LINKSOM = 1;
+const int ACTIEF = 1;
+const int INACTIEF = 0;
+Servo servo1;
+Servo servo2;
+int angle = 0;
+long tussenperiode = 1000;
+int draaiRichting1= LINKSOM;
+int draaiRichting2 = LINKSOM;
+long vorigeMillis1 = 0;
+long vorigeMillis2 = 0;
+int blokkadeStatus1 = INACTIEF;
+int blokkadeStatus2 = INACTIEF;
+int knopStatus1;
+int knopStatus2;
 
 
 void setup()
