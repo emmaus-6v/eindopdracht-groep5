@@ -6,7 +6,7 @@
 
 Servo servo_2;  //360 servo
 Servo servo_3;  //blokkade/tijdelijke stop links
-Servo servo_4;
+Servo servo_4;  //blokkade/tijdelijke stop rechts
 
 String sorteerRichting = "linksom"; // kan zijn stilstand, linksom en rechtsom  
 int knop1 = 14; //linksom
