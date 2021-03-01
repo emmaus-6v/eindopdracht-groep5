@@ -4,15 +4,15 @@
 #define sensorPinLinks 6
 #define sensorPinRechts 7
 
-Servo servo_8;  
-Servo servo_9;
-Servo servo_10;
+Servo servo_2;  //360 servo
+Servo servo_3;  //blokkade/tijdelijke stop links
+Servo servo_4;
 
 String sorteerRichting = "linksom"; // kan zijn stilstand, linksom en rechtsom  
-int knop1 = 2; //linksom
-int knop2 = 3; //rechtsom
-int knop3 = 4; //stilstand
-int knop4 = 5; //open-dicht
+int knop1 = 14; //linksom
+int knop2 = 15; //rechtsom
+int knop3 = 16; //stilstand
+int knop4 = 17; //open-dicht
 
 int sensorLinks = 0, lastStateLinks = 0;         // variable for reading the pushbutton status
 int sensorRechts = 0, lastStateRechts = 0;
@@ -45,19 +45,19 @@ int blokkadeStatus1 = INACTIEF;
 int blokkadeStatus2 = INACTIEF;
 int knopStatus1;
 int knopStatus2;
-int knopObstakel1 = 2;
-int knopObstakel2 = 4;
+int knopObstakel1 = 18;
+int knopObstakel2 = 19;
 
 
 void setup()
 {
   //-----------------------sorteren-----------------------//
   //servo's
-  servo_8.attach(8); //360 sorteer servo
-  servo_9.attach(9); //linker blok servo
-  servo_9.write(90);
-  servo_10.attach(10); //rechter blok servo
-  servo_10.write(90);
+  servo_2.attach(2); //360 sorteer servo
+  servo_3.attach(3); //linker blok servo
+  servo_3.write(90);
+  servo_4.attach(4); //rechter blok servo
+  servo_4.write(90);
   //knoppen
   pinMode(knop1, INPUT);
   pinMode(knop2, INPUT);
@@ -96,15 +96,15 @@ void loop()
 
   // sorteerRichting regelen
   if (sorteerRichting == "stilstand") {
-    servo_8.write(90);
+    servo_2.write(90);
   }
 
   if (sorteerRichting == "linksom") {
-    servo_8.write(110);
+    servo_2.write(110);
   }
 
   if (sorteerRichting == "rechtsom") {
-    servo_8.write(70);
+    servo_2.write(70);
   }
 
 
@@ -136,8 +136,8 @@ void loop()
   } 
   // zorgen dat nadat de rechter sensor iets heeft gedetecteerd de blokkade open gaat na 1000 millisec stilstand.
   if ((currentMillisSorteer - startMillisSorteer >= periode1000) && (sorteerMillisStatus == 1)) {
-    servo_9.write(0);
-    servo_10.write(180);
+    servo_3.write(0);
+    servo_4.write(180);
     startMillisSorteer = currentMillisSorteer;
     sorteerMillisStatus = 2;
   }
@@ -151,15 +151,15 @@ void loop()
   
   // met een knop de tijdelijke blokkade openen
   if (digitalRead(knop4) == HIGH) {
-    servo_9.write(0);
-    servo_10.write(180);
+    servo_3.write(0);
+    servo_4.write(180);
     startMillisStart = currentMillisStart;
   }
 
   // zorgen dat de blokkade altijd na 3000 millisec weer dicht gaat
   if (currentMillisStart - startMillisStart >= periode3000) {
-    servo_9.write(90);
-    servo_10.write(90);
+    servo_3.write(90);
+    servo_4.write(90);
     startMillisStart = currentMillisStart;  //IMPORTANT to save the start time of the current LED state.
   }  
 
