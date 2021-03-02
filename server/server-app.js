@@ -142,6 +142,8 @@ function getTotalPresses(_request, response){
 }
 
 //------------einde voorbeeld----------/
+
+
 /**
  * voegt nieuwe regel toe aan scoreRechts
  * en geeft de id van de nieuwe regel terug in de reponse
@@ -151,8 +153,7 @@ function getTotalPresses(_request, response){
 
 //links scoort
 function linksScoort(_request, response) {
-  scoreLinks++;
-  pool.query("UPDATE score SET links = scoreLinks, tijd = CURRENT_TIMESTAMP", (error, results) => {
+  pool.query("UPDATE scoreOverzicht SET links = (links + 1), tijd = CURRENT_TIMESTAMP", (error, results) => {
     if (error) {
       throw error;
     }
@@ -162,8 +163,7 @@ function linksScoort(_request, response) {
 
 //rechts scoort
 function rechtsScoort(_request, response) {
-  scoreRechts++;
-  pool.query("UPDATE score SET rechts = scoreRechts, tijd = CURRENT_TIMESTAMP", (error, results) => {
+  pool.query("UPDATE scoreOverzicht SET rechts = (rechts + 1), tijd = CURRENT_TIMESTAMP", (error, results) => {
     if (error) {
       throw error;
     }
@@ -173,7 +173,7 @@ function rechtsScoort(_request, response) {
 
 //score reset (iemand heeft gewonnen)
 function scoreReset(_request, response) {
-  pool.query("UPDATE score SET links = 0, rechts = 0, tijd = CURRENT_TIMESTAMP", (error, results) => {
+  pool.query("UPDATE scoreOverzicht SET links = 0, rechts = 0, tijd = CURRENT_TIMESTAMP", (error, results) => {
     if (error) {
       throw error;
     }
@@ -182,7 +182,7 @@ function scoreReset(_request, response) {
 }
 
 function getScore(_request, response){
-  pool.query("SELECT links AS linksScore, rechts AS rechtsScore FROM score;", (error, results) => {
+  pool.query("SELECT links AS linksScore, rechts AS rechtsScore FROM scoreOverzicht", (error, results) => {
     if (error) {
       throw error;
     }

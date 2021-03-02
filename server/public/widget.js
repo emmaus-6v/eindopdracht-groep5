@@ -37,6 +37,7 @@ function checkForDatabaseChanges() {
 
         // roep ander update functie(s) aan:
         getTotalPresses();
+        getScores();
       }
       else {
         // je kunt de code hieronder aanzetten, maar krijgt dan wel iedere seconde een melding
@@ -110,7 +111,7 @@ function getScores() {
   request.onload = function () {
     var data = JSON.parse(this.response);
     if (request.status >= 200 && request.status < 400) {
-      console.log(`Score = ${data.totalbuttonpresses} `);
+      console.log(`Score = ${data.linksScore} ${data.rechtsScore} `);
       scoreLinks = data.linksScore;
       scoreRechts = data.rechtsScore;
       var newTimeStamp = new Date(data.lasttimestamp).getTime()+1;

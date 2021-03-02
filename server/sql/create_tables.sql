@@ -5,7 +5,7 @@ CREATE TABLE baanStatus (
   opmerking VARCHAR(128)
 );
 
-CREATE TABLE score (
+CREATE TABLE scoreOverzicht (
   ID INTEGER PRIMARY KEY,
   links INTEGER,
   rechts INTEGER,
