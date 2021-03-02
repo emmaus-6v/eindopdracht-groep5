@@ -84,8 +84,8 @@ Uitgevoerd: Sorteercode in de main branch gevoegd. Samen met Lucas de code verbe
 
 ---
 
-Datum:
-Leerling:
-Uitgevoerd:
+Datum: 02 - 03 - 2021
+Leerling: Kars Kraan
+Uitgevoerd: Code veranderd, werkt niet. Ga morgen hopelijk verder, denkvermogen is 0
 
 
