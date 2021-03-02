@@ -3,6 +3,10 @@ var laatsteUpdateTimeStamp;
 var button;
 var numberOfButtonPresses = 0;
 
+//scores
+var scoreRechts = 0;
+var scoreLinks = 0;
+
 /**
  * preload
  * deze functie wordt als eerste javascriptfunctie uitgevoerd,
@@ -99,6 +103,52 @@ function buttonPressed() {
   request.send()
 }
 
+function getScores() {
+  // zet het serverrequest in elkaar
+  var request = new XMLHttpRequest()
+  request.open('GET', '/api/getScore', true)
+  request.onload = function () {
+    var data = JSON.parse(this.response);
+    if (request.status >= 200 && request.status < 400) {
+      console.log(`Score = ${data.totalbuttonpresses} `);
+      scoreLinks = data.linksScore;
+      scoreRechts = data.rechtsScore;
+      var newTimeStamp = new Date(data.lasttimestamp).getTime()+1;
+
+      // update indien nodig de timestamp
+      if (laatsteUpdateTimeStamp < newTimeStamp) {
+        laatsteUpdateTimeStamp = newTimeStamp;
+      }
+      
+    }
+    else {
+        console.log("bleh, server reageert niet zoals gehoopt");
+        console.log(this.response);
+      }
+  }
+
+  // verstuur het request
+  request.send()
+}
+
+
+function scoreReset() {
+  // zet het serverrequest in elkaar
+  var request = new XMLHttpRequest()
+  request.open('GET', '/api/scoreReset', true)
+  request.onload = function () {
+    if (request.status >= 200 && request.status < 400) {
+      console.log('Score reset wordt gedaan');
+    }
+    else {
+        console.log("bleh, server reageert niet zoals gehoopt");
+        console.log(this.response);
+      }
+  }
+
+  // verstuur het request
+  request.send()
+}
 
 /**
  * setup
@@ -134,6 +184,6 @@ function draw() {
     textSize(20);
     text("score", 190, 20);
     textSize(35);
-    text("0", 170, 60); //moet nog variabel worden
-    text("2", 240, 60); //idem
+    text(scoreLinks, 170, 60); 
+    text(scoreRechts, 240, 60); 
 }

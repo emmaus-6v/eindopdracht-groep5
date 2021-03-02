@@ -31,6 +31,8 @@ app.get('/api/getTotalPresses', getTotalPresses);
 
 app.get('/api/linksScoort', linksScoort);
 app.get('/api/rechtsScoort',rechtsScoort);
+app.get('/api/getScore', getScore);
+app.get('/api/scoreReset', scoreReset);
 app.get('/api/setKnikkerbaanStatus/:newStatus', setKnikkerbaanStatus);
 
 
@@ -141,36 +143,52 @@ function getTotalPresses(_request, response){
 
 //------------einde voorbeeld----------/
 /**
- * voegt nieuwe regel toe aan scoreLinks
- * en geeft de id van de nieuwe regel terug in de reponse
- * @param _request het webrequest dat deze bewerking startte
- * @param response het antwoord dat teruggegeven gaat worden.
- */
-function linksScoort(_request, response) {
-  pool.query("INSERT INTO scoreLinks (tijd) VALUES (CURRENT_TIMESTAMP) RETURNING ID", (error, results) => {
-    if (error) {
-      throw error;
-    }
-    response.status(201).send(`Nieuwe punt added with ID: ${results.rows[0].id}`);
-  });
-}
-
-/**
  * voegt nieuwe regel toe aan scoreRechts
  * en geeft de id van de nieuwe regel terug in de reponse
  * @param _request het webrequest dat deze bewerking startte
  * @param response het antwoord dat teruggegeven gaat worden.
  */
-function rechtsScoort(_request, response) {
-  pool.query("INSERT INTO scoreRechts (tijd) VALUES (CURRENT_TIMESTAMP) RETURNING ID", (error, results) => {
+
+//links scoort
+function linksScoort(_request, response) {
+  scoreLinks++;
+  pool.query("UPDATE score SET links = scoreLinks, tijd = CURRENT_TIMESTAMP", (error, results) => {
     if (error) {
       throw error;
     }
-    response.status(201).send(`Nieuwe punt added with ID: ${results.rows[0].id}`);
+    response.status(201).send(`Punt toegevoegd: ${results.rows[0].id}`);
   });
 }
 
+//rechts scoort
+function rechtsScoort(_request, response) {
+  scoreRechts++;
+  pool.query("UPDATE score SET rechts = scoreRechts, tijd = CURRENT_TIMESTAMP", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Punt toegevoegd: ${results.rows[0].id}`);
+  });
+}
 
+//score reset (iemand heeft gewonnen)
+function scoreReset(_request, response) {
+  pool.query("UPDATE score SET links = 0, rechts = 0, tijd = CURRENT_TIMESTAMP", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Terug naar 0 Links: ${results.rows[0].id}`);
+  });
+}
+
+function getScore(_request, response){
+  pool.query("SELECT links AS linksScore, rechts AS rechtsScore FROM score;", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results.rows[0]);
+  });
+}
 
 /**
  * setKnikkerbaanStatus
