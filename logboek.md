@@ -99,3 +99,8 @@ Uitgevoerd: Verslag afgemaakt en mijn eigen visie toegevoegd.
 Datum: 03-03-2021
 Leerling: Maarten van Koesveld
 Uitgevoerd: mijn reflectie toegevoed.
+
+---
+Datum: 03-03-2021
+Leerling: Kars Kraan
+Uitgevoerd: Widget gemerged met main en reflectie toegevoegd.
