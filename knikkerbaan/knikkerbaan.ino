@@ -8,6 +8,13 @@ Servo servo_2;  //360 servo
 Servo servo_3;  //blokkade/tijdelijke stop links
 Servo servo_4;  //blokkade/tijdelijke stop rechts
 
+//Bewegingssensor met LED
+int led = 13;
+int pin = 2;
+
+int value = 0;
+int pirState = LOW;
+
 String sorteerRichting = "linksom"; // kan zijn stilstand, linksom en rechtsom  
 int knop1 = 14; //linksom
 int knop2 = 15; //rechtsom
@@ -51,6 +58,11 @@ int knopObstakel2 = 19;
 
 void setup()
 {
+  //Bewegingssensor met LED
+  pinMode(led, OUTPUT);
+  pinMode(pin, INPUT);
+  Serial.begin(9600);
+  
   //-----------------------sorteren-----------------------//
   //servo's
   servo_2.attach(2); //360 sorteer servo
@@ -83,6 +95,26 @@ void setup()
 
 
 void loop()
+  
+  //Bewegingssensor met LED
+  
+ value = digitalRead(pin);
+
+  if (value == HIGH) {
+    digitalWrite(led, HIGH);
+
+    if (pirState == LOW) {
+      Serial.println("Motion Detected!");
+      pirState = HIGH;
+    }
+  }else{
+    digitalWrite(led, LOW);
+
+    if(pirState == HIGH){
+      Serial.println("Motion Ended!");
+      pirState = LOW;
+      }
+    }
 { 
   //-----------------------sorteren-----------------------//
   // millis
