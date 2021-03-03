@@ -82,7 +82,8 @@ en communicatie beter gekunt.
 #### Kars K
 Het is een druk jaar, zowel door corona als door het examenjaar zelf. Hierdoor heb je niet echt door hoe snel het gaat en gaat het mis met de planning, ook was motivatie een probleem. Dit zorgt voor een nogal belabberd eindproduct, als je het zo kan noemen. Ik zelf ben tegen het einde van het project niet in de meest gemotiveerde stemming en omdat ik zelf eerder niet doorhad hoe snel het allemaal wel ging heb ik er eerder niks aan gedaan. Het stuk wat ik zou gaan doen is eigenlijk nauwelijks werkend en hooguit een framework. Samenwerken in het project kon ook beter, doordat ons groepje verspreid zat door twee klassen heen kon er een desynchronisatie van kennis komen, omdat niet altijd in het zelfde les zat. Hierdoor moest alles over Whatsaap en discord wat nogal stroefjes verliep. Ik denk dat dit project veel beter had gekund met de juiste planning en communicatie.
 
-#### Leerling 4
+#### Amir
+Het project waar we een knikkerbaan zouden bouwen met behulp van Arduino leek mij erg leuk en daar was ik zeer benieuwd naar. Ik had veel zin om hieraan te werken, omdat ik de knikerbaan heel graag werkend wilde zien. De knikkerbaan bouwen vond ik erg leuk en dat geld ook voor de code in Arduino. De communicatie mocht wel wat beter, we moesten wat meer met elkaar communiceren en betere afspraken maken. Ik vind het ook jammer dat we niet een volledig eindproduct hebben kunnen maken, omdat ik het plan erg leuk vond en het project graag werkend had willen zien.
 
 
 ## Slot
