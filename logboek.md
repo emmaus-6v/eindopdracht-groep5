@@ -72,20 +72,24 @@ Uitgevoerd: sequentie afgemaakt, code geoptimaliseerd. code geïmporteerd naar g
 
 ---
 
-Datum:1-3-2021
+Datum:01-03-2021
 Leerling:Lucas Koster
 Uitgevoerd: code deze maal goed samengevoegd zodat het nu goed is opgeslagen, code samen met Maarten verbeterd.
 
 ---
 
-Datum: 01- 03- 2021
+Datum: 01-03-2021
 Leerling: Maarten van Koesveld
 Uitgevoerd: Sorteercode in de main branch gevoegd. Samen met Lucas de code verbeterd en netjes gemaakt.
 
 ---
 
-Datum: 02 - 03 - 2021
+Datum: 02-03-2021
 Leerling: Kars Kraan
-Uitgevoerd: Code veranderd, werkt niet. Ga morgen hopelijk verder, denkvermogen is 0
+Uitgevoerd: Code veranderd, werkt niet. Ga morgen hopelijk verder, denkvermogen is 0.
 
+---
 
+Datum: 03-03-2021
+Leerling: Wesley Snoei
+Uitgevoerd: Verslag afgemaakt en mijn eigen visie toegevoegd.
