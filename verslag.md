@@ -90,3 +90,8 @@ De opdracht die werd aangekodigt vond ik gelijk al een leuk idee en ik was erg e
 
 
 ## Slot
+Nog een filmpje van de arduino van het sorteerdeel
+https://youtu.be/fsWdALy_ft0
+
+
+
