@@ -111,10 +111,22 @@ Leerling: Maarten van Koesveld
 Uitgevoerd: mijn reflectie toegevoed.
 
 ---
+
 Datum: 03-03-2021
-Leerling: Amir Poljak
+Leerling: Amir Poljak, Daan Nieuweboer, Kars Hofstra
 Uitgevoerd: Bouwen van de knikkerbaan 
 
+---
+
+Datum: 03-03-2021
+Leerling: Maarten van Koesveld
+Uitgevoerd: Arduino code controleren en laatste aanpassingen verwerken
+
+---
+
+Datum: 03-03-2021
+Leerling: Maarten van Koesveld
+Uitgevoerd: Filmpje uploaden van de Servo
 
 ---
 Datum: 03-03-2021
