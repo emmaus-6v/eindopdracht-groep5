@@ -37,8 +37,14 @@ Uitgevoerd: De code en de arduino onderdelen van het sorteer deel werkend gemaak
 ---
 
 Datum: 26-02-2021
-Leerling: Daan Nieuweboer, Kars Hofstra, Maarten van Koesveld, Lucas Koster, Wesley Snoei
+Leerling: Daan Nieuweboer, Kars Hofstra, Maarten van Koesveld, Lucas Koster, Wesley Snoei, Amir Poljak
 Uitgevoerd: Overleg via Discord over hoe we de deadline gaan halen.
+
+---
+
+Datum: 26-02-2021
+Leerling: Amir Poljak 
+Uitgevoerd: Code maken van de Bewegingssensor die communiceert met de LED
 
 ---
 
@@ -72,6 +78,10 @@ Uitgevoerd: sequentie afgemaakt, code geoptimaliseerd. code geïmporteerd naar g
 
 ---
 
+Datum: 28-02-2021
+Leerling: Amir Poljak
+Uitgevoerd: De code voor de beweginssensor met de LED volledig afgemaakt
+
 Datum:01-03-2021
 Leerling:Lucas Koster
 Uitgevoerd: code deze maal goed samengevoegd zodat het nu goed is opgeslagen, code samen met Maarten verbeterd.
@@ -99,6 +109,12 @@ Uitgevoerd: Verslag afgemaakt en mijn eigen visie toegevoegd.
 Datum: 03-03-2021
 Leerling: Maarten van Koesveld
 Uitgevoerd: mijn reflectie toegevoed.
+
+---
+Datum: 03-03-2021
+Leerling: Amir Poljak
+Uitgevoerd: Bouwen van de knikkerbaan 
+
 
 ---
 Datum: 03-03-2021
