@@ -54,7 +54,7 @@ Er gebeurde hier vrij weinig in het algemeen, klein beetje overleg en beginnetje
 
 ### sprint 6
 Hier moesten we echt aan de bak want we hadden niet veel code en fysieks gedaan. In het algemeen kun je zeggen dat we in de laatste sprint alles hebben gedaan.
-Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodig via de Whatsapp en Discord, over hoe we het allemaal voor elkaar zouden (moeten) krijgen. Uitendelijk hebben we jammer genoeg niet alles voor elkaar gekregen zoals we wilden en planden.
+Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodig via de Whatsapp en Discord, over hoe we het allemaal voor elkaar zouden (moeten) krijgen. Uitendelijk hebben (bijna) alles voor elkaar gekregen zoals we wilden en planden precies voor de presentatie.
 
 
 
