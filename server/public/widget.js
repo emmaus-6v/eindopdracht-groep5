@@ -3,6 +3,10 @@ var laatsteUpdateTimeStamp;
 var button;
 var numberOfButtonPresses = 0;
 
+//scores
+var scoreRechts = 0;
+var scoreLinks = 0;
+
 /**
  * preload
  * deze functie wordt als eerste javascriptfunctie uitgevoerd,
@@ -33,6 +37,7 @@ function checkForDatabaseChanges() {
 
         // roep ander update functie(s) aan:
         getTotalPresses();
+        getScores();
       }
       else {
         // je kunt de code hieronder aanzetten, maar krijgt dan wel iedere seconde een melding
@@ -99,6 +104,52 @@ function buttonPressed() {
   request.send()
 }
 
+function getScores() {
+  // zet het serverrequest in elkaar
+  var request = new XMLHttpRequest()
+  request.open('GET', '/api/getScore', true)
+  request.onload = function () {
+    var data = JSON.parse(this.response);
+    if (request.status >= 200 && request.status < 400) {
+      console.log(`Score = ${data.linksScore} ${data.rechtsScore} `);
+      scoreLinks = data.linksScore;
+      scoreRechts = data.rechtsScore;
+      var newTimeStamp = new Date(data.lasttimestamp).getTime()+1;
+
+      // update indien nodig de timestamp
+      if (laatsteUpdateTimeStamp < newTimeStamp) {
+        laatsteUpdateTimeStamp = newTimeStamp;
+      }
+      
+    }
+    else {
+        console.log("bleh, server reageert niet zoals gehoopt");
+        console.log(this.response);
+      }
+  }
+
+  // verstuur het request
+  request.send()
+}
+
+
+function scoreReset() {
+  // zet het serverrequest in elkaar
+  var request = new XMLHttpRequest()
+  request.open('GET', '/api/scoreReset', true)
+  request.onload = function () {
+    if (request.status >= 200 && request.status < 400) {
+      console.log('Score reset wordt gedaan');
+    }
+    else {
+        console.log("bleh, server reageert niet zoals gehoopt");
+        console.log(this.response);
+      }
+  }
+
+  // verstuur het request
+  request.send()
+}
 
 /**
  * setup
@@ -108,11 +159,6 @@ function buttonPressed() {
 function setup() {
   // Maak het canvas van je widget
   createCanvas(480, 200);
-
-  button = createButton('Klik op deze knop!');
-  button.position(120, 15);
-  button.mouseClicked(buttonPressed);
-
 
   // zet timeStamp op lang geleden zodat we alle recente info binnenkrijgen
   laatsteUpdateTimeStamp = new Date().setTime(0);
@@ -128,7 +174,17 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
-  // schrijf hieronder de code van je widget
-  // nu wordt slechts een voorbeeld als plaatje getoond
-  // verwijder deze achtergrond en creëer je eigen widge
+    //check for changes
+    checkForDatabaseChanges();
+
+
+
+    // lay-out/uiterlijk widget
+    background(0,0,0);
+    fill(255, 255, 255);
+    textSize(20);
+    text("score", 190, 20);
+    textSize(35);
+    text(scoreLinks, 170, 60); 
+    text(scoreRechts, 240, 60); 
 }

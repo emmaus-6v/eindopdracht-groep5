@@ -22,8 +22,17 @@ app.use(express.static(path.join(__dirname, '/public')));
 // ⬇︎ HIER JE EIGEN AANPASSINGEN MAKEN ⬇︎
 app.get('/', (_request, response) => {response.redirect('index.html'); })
 app.get('/api/checkchanges/:widgetTimeStamp', checkChanges);
+
+//voorbeeld
 app.get('/api/addButtonPress', addButtonPress);
 app.get('/api/getTotalPresses', getTotalPresses);
+//einde voorbeeld
+
+
+app.get('/api/linksScoort', linksScoort);
+app.get('/api/rechtsScoort',rechtsScoort);
+app.get('/api/getScore', getScore);
+app.get('/api/scoreReset', scoreReset);
 app.get('/api/setKnikkerbaanStatus/:newStatus', setKnikkerbaanStatus);
 
 
@@ -97,7 +106,7 @@ function checkChanges(_request, response) {
                 });
 }
 
-
+//-------------voorbeeld----------------------//
 /**
  * addButtonPress
  * 
@@ -132,6 +141,54 @@ function getTotalPresses(_request, response){
   });
 }
 
+//------------einde voorbeeld----------/
+
+
+/**
+ * voegt nieuwe regel toe aan scoreRechts
+ * en geeft de id van de nieuwe regel terug in de reponse
+ * @param _request het webrequest dat deze bewerking startte
+ * @param response het antwoord dat teruggegeven gaat worden.
+ */
+
+//links scoort
+function linksScoort(_request, response) {
+  pool.query("UPDATE scoreOverzicht SET links = (links + 1), tijd = CURRENT_TIMESTAMP", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Punt toegevoegd: ${results.rows[0].id}`);
+  });
+}
+
+//rechts scoort
+function rechtsScoort(_request, response) {
+  pool.query("UPDATE scoreOverzicht SET rechts = (rechts + 1), tijd = CURRENT_TIMESTAMP", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Punt toegevoegd: ${results.rows[0].id}`);
+  });
+}
+
+//score reset (iemand heeft gewonnen)
+function scoreReset(_request, response) {
+  pool.query("UPDATE scoreOverzicht SET links = 0, rechts = 0, tijd = CURRENT_TIMESTAMP", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(201).send(`Terug naar 0 Links: ${results.rows[0].id}`);
+  });
+}
+
+function getScore(_request, response){
+  pool.query("SELECT links AS linksScore, rechts AS rechtsScore FROM scoreOverzicht", (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results.rows[0]);
+  });
+}
 
 /**
  * setKnikkerbaanStatus

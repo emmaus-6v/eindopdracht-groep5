@@ -5,7 +5,9 @@ CREATE TABLE baanStatus (
   opmerking VARCHAR(128)
 );
 
-CREATE TABLE buttonPresses (
-  ID SERIAL PRIMARY KEY,
+CREATE TABLE scoreOverzicht (
+  ID INTEGER PRIMARY KEY,
+  links INTEGER,
+  rechts INTEGER,
   tijd TIMESTAMP WITH TIME ZONE NOT NULL
 );
