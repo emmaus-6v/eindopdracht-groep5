@@ -74,7 +74,12 @@ Ik vond het idee erg leuk was.Een knikkerbaan samengevoegd met vele andere infor
 de vorige jaren inclusief dit jaar hebt geleerd. Het enige wat wel beter kon was zowel de tijdsplanning alsde echte motiviatie krijgen. Ik hoor van
 velen dat ze niet klaar zijn, en pas 1 of 2 dagen van tevoren zijn begonnen. Het idee was goed in mijn opinie, de echte uitvoering kan veel beter.
 
-#### --leerling2--
+#### Maarten
+Ik vond ook het idee van een knikkerbaan maken leuk. Ons plan leek me ook goed, alleen was de uitvoering wat minder. Uiteindelijk hebben we niet een fysiek werkende knikkerbaan 
+wat jammer is. Dit komt deels door corona en de weinige mogelijkheden om de baan te bouwen en deels door slechte planning en de planning niet nakomen. Ook had de samenwerking 
+en communicatie beter gekunt.
+
+#### --leerling3--
 Ik kijk terug op...
 
 
