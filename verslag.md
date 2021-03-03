@@ -54,7 +54,7 @@ Er gebeurde hier vrij weinig in het algemeen, klein beetje overleg en beginnetje
 
 ### sprint 6
 Hier moesten we echt aan de bak want we hadden niet veel code en fysieks gedaan. In het algemeen kun je zeggen dat we in de laatste sprint alles hebben gedaan.
-Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodig via de Whatsapp en Discord, over hoe we het allemaal voor elkaar zouden (moeten) krijgen.
+Nieuw ontwerp, code af, fysieke baan af, etc etc etc. Veel overleg was hier nodig via de Whatsapp en Discord, over hoe we het allemaal voor elkaar zouden (moeten) krijgen. Uitendelijk hebben we jammer genoeg niet alles voor elkaar gekregen zoals we wilden en planden.
 
 
 
@@ -69,8 +69,10 @@ Dat we geen regels maakten of iets wat daarop lijkt betekende overigens niet dat
 We hadden aan het begin namelijk al aan elkaar duidelijk gemaakt en verteld wie en wat, alleen zoals gezegd geen duidelijke wanneer.
 
 ## Reflectie
-#### --leerling1--
-Ik vond...
+#### Wesley
+Ik vond het idee erg leuk was.Een knikkerbaan samengevoegd met vele andere informatica onderwerpen zoals een Website en een Arduino, dat alles combineert wat je
+de vorige jaren inclusief dit jaar hebt geleerd. Het enige wat wel beter kon was zowel de tijdsplanning alsde echte motiviatie krijgen. Ik hoor van
+velen dat ze niet klaar zijn, en pas 1 of 2 dagen van tevoren zijn begonnen. Het idee was goed in mijn opinie, de echte uitvoering kan veel beter.
 
 #### --leerling2--
 Ik kijk terug op...
