@@ -85,5 +85,8 @@ Het is een druk jaar, zowel door corona als door het examenjaar zelf. Hierdoor h
 #### Lucas K
 de opdracht was in het begin een vrij idee waar wij veel aan konden aanpassen. Het vormgeven van de koers van de baan werd vaak veranderd en uiteindelijk moest het gehele project aangepast worden aan het nieuwe tijdsbestek dat wij hadden door de nieuwe maatregelen op school. Doordat wij over 3 verschillende groepen waren verspreid was goed communiceren lastig. En door corona konden wij ook niet samenkomen in het echt. Het project liep hierdoor niet hel vloeiend. Aan het einde van de rit was er veel werk aan de winkel en moest alles nu als laatste versie gemaakt worden. In kort was het concept van het idee heel erg goed en slim bedacht, want wij den konden ons er compleet op los laten qua kennis en vaardigheden. Maar de executie kon vele malen beter. Het grootste probleem waren de maatregelen.
 
+### Amir 
+De opdracht die werd aangekodigt vond ik gelijk al een leuk idee en ik was erg enthousiast om de knikkerbaan samen met de Arduino te maken. Ik vond de knikkerbaan maken erg leuk en dat geldt ook voor de code op Arduino. De samenwerking verliep niet helemaal vlekkeloos, we konden wat beter met elkaar communiceren en betere afspraken maken. Ik vind het ook best jammer dat we niet een volledig eindproject hebben kunnen maken, dat komt overigens ook een beetje door corona. Ik wilde de Knikkerbaan namelijk heel graag samen met de Arduino in de praktijk zien en testen. Over het algemeen ben ik wel tevreden alleen vind ik het wel jammer dat we geen volledig eindproduct hadden en we zouden de volgende keer iets beter met elkaar kunnen communiceren.
+
 
 ## Slot
