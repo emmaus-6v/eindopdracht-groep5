@@ -82,7 +82,8 @@ en communicatie beter gekunt.
 #### Kars K
 Het is een druk jaar, zowel door corona als door het examenjaar zelf. Hierdoor heb je niet echt door hoe snel het gaat en gaat het mis met de planning, ook was motivatie een probleem. Dit zorgt voor een nogal belabberd eindproduct, als je het zo kan noemen. Ik zelf ben tegen het einde van het project niet in de meest gemotiveerde stemming en omdat ik zelf eerder niet doorhad hoe snel het allemaal wel ging heb ik er eerder niks aan gedaan. Het stuk wat ik zou gaan doen is eigenlijk nauwelijks werkend en hooguit een framework. Samenwerken in het project kon ook beter, doordat ons groepje verspreid zat door twee klassen heen kon er een desynchronisatie van kennis komen, omdat niet altijd in het zelfde les zat. Hierdoor moest alles over Whatsaap en discord wat nogal stroefjes verliep. Ik denk dat dit project veel beter had gekund met de juiste planning en communicatie.
 
-#### Leerling 4
+#### Lucas K
+de opdracht was in het begin een vrij idee waar wij veel aan konden aanpassen. Het vormgeven van de koers van de baan werd vaak veranderd en uiteindelijk moest het gehele project aangepast worden aan het nieuwe tijdsbestek dat wij hadden door de nieuwe maatregelen op school. Doordat wij over 3 verschillende groepen waren verspreid was goed communiceren lastig. En door corona konden wij ook niet samenkomen in het echt. Het project liep hierdoor niet hel vloeiend. Aan het einde van de rit was er veel werk aan de winkel en moest alles nu als laatste versie gemaakt worden. In kort was het concept van het idee heel erg goed en slim bedacht, want wij den konden ons er compleet op los laten qua kennis en vaardigheden. Maar de executie kon vele malen beter. Het grootste probleem waren de maatregelen.
 
 
 ## Slot
