@@ -79,9 +79,10 @@ Ik vond ook het idee van een knikkerbaan maken leuk. Ons plan leek me ook goed, 
 wat jammer is. Dit komt deels door corona en de weinige mogelijkheden om de baan te bouwen en deels door slechte planning en de planning niet nakomen. Ook had de samenwerking 
 en communicatie beter gekunt.
 
-#### --leerling3--
-Ik kijk terug op...
+#### Kars K
+Het is een druk jaar, zowel door corona als door het examenjaar zelf. Hierdoor heb je niet echt door hoe snel het gaat en gaat het mis met de planning, ook was motivatie een probleem. Dit zorgt voor een nogal belabberd eindproduct, als je het zo kan noemen. Ik zelf ben tegen het einde van het project niet in de meest gemotiveerde stemming en omdat ik zelf eerder niet doorhad hoe snel het allemaal wel ging heb ik er eerder niks aan gedaan. Het stuk wat ik zou gaan doen is eigenlijk nauwelijks werkend en hooguit een framework. Samenwerken in het project kon ook beter, doordat ons groepje verspreid zat door twee klassen heen kon er een desynchronisatie van kennis komen, omdat niet altijd in het zelfde les zat. Hierdoor moest alles over Whatsaap en discord wat nogal stroefjes verliep. Ik denk dat dit project veel beter had gekund met de juiste planning en communicatie.
 
+#### Leerling 4
 
 
 ## Slot
